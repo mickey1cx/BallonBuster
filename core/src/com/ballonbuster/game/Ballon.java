@@ -14,6 +14,7 @@ public class Ballon extends BaseActor {
     private float initY;
     private float time;
     private int offsetX;
+    private boolean isPopped = false;
 
     BallonLevel ballonLevel;
 
@@ -45,7 +46,7 @@ public class Ballon extends BaseActor {
         float yPos = amplitude * MathUtils.sin(oscillation * xPos) + initY;
         setPosition(xPos, yPos);
 
-        if (getX() > ballonLevel.mapWidth) {
+        if (!isPopped && getX() > ballonLevel.mapWidth) {
             ballonLevel.escapedInc();
             remove();
         }
@@ -53,6 +54,8 @@ public class Ballon extends BaseActor {
     }
 
     public void popBullon() {
+
+        isPopped = true;
 
         Action popped = Actions.sequence(
                 Actions.parallel(
