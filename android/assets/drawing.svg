@@ -16,7 +16,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="L:\Android\projects\BeginningJavaGameDevelopment\BallonBuster\android\assets\grey-ballon.png"
+   inkscape:export-xdpi="99"
+   inkscape:export-ydpi="99">
   <defs
      id="defs2">
     <radialGradient
@@ -42,6 +45,17 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0" />
     </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.12529825,0.22597475,-0.14773211,0.08191435,125.06798,-90.36375)"
+       r="166.63042"
+       fy="263.07007"
+       fx="664.33838"
+       cy="263.07007"
+       cx="664.33838"
+       id="radialGradient959-1"
+       xlink:href="#linearGradient955"
+       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -50,9 +64,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="-294.80478"
-     inkscape:cy="825.67558"
+     inkscape:zoom="1.4"
+     inkscape:cx="-220.95826"
+     inkscape:cy="731.31136"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -987,6 +1001,40 @@ n+046/f7ZGlKFEW0Wi3nSqdUWZbRXVt7YJyKoohGszlR1dikPKlqp3/n0fqqlCrjVFiur5Kdzjyz
            id="path817-9"
            d="m 136.07128,39.220345 c -3.55922,-3e-6 -7.04629,0.307017 -10.43916,0.889868 a 57.649745,41.508431 35.197435 0 0 -9.54102,7.813992 57.649745,41.508431 35.197435 0 0 19.65772,67.100815 57.649745,41.508431 35.197435 0 0 57.04406,12.80852 c 2.90548,-9.70834 4.51084,-19.2089 4.51084,-27.38127 0,-33.817583 -27.41486,-61.231925 -61.23244,-61.231925 z"
            style="fill:url(#radialGradient959);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.9965539;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       style="stroke-width:11.9931078;enable-background:new"
+       id="g880-7"
+       transform="matrix(0.08338123,0,0,0.08338123,9.5012138,77.993955)"
+       inkscape:export-xdpi="99.5"
+       inkscape:export-ydpi="99.5">
+      <g
+         id="layer1-8-7"
+         inkscape:label="Layer 1"
+         style="stroke-width:11.9931078">
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path817-4"
+           d="m 197.30357,100.45238 c 0,33.81758 -27.41456,90.36452 -61.23214,90.36452 -33.81758,0 -61.232145,-56.54694 -61.232147,-90.36452 -2e-6,-33.817581 27.414567,-61.232148 61.232147,-61.232146 33.81758,2e-6 61.23214,27.414567 61.23214,61.232146 z"
+           style="fill:#909090;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.9965539;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path817-0-8"
+           d="m 141.18254,199.0077 c 0,-4.15126 -2.28831,-11.09267 -5.1111,-11.09267 -2.82281,0 -5.11112,6.94141 -5.11112,11.09267 0,4.15127 2.12962,-0.76897 4.95242,-0.76897 2.82279,0 5.2698,4.92024 5.2698,0.76897 z"
+           style="fill:#909090;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.99655437;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+      </g>
+      <g
+         style="opacity:0.82700004;stroke-width:11.9931078"
+         inkscape:label="Layer 2"
+         id="layer2-5-4">
+        <path
+           id="path817-9-0"
+           d="m 136.07128,39.220345 c -3.55922,-3e-6 -7.04629,0.307017 -10.43916,0.889868 a 57.649745,41.508431 35.197435 0 0 -9.54102,7.813992 57.649745,41.508431 35.197435 0 0 19.65772,67.100815 57.649745,41.508431 35.197435 0 0 57.04406,12.80852 c 2.90548,-9.70834 4.51084,-19.2089 4.51084,-27.38127 0,-33.817583 -27.41486,-61.231925 -61.23244,-61.231925 z"
+           style="fill:url(#radialGradient959-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.9965539;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
            inkscape:connector-curvature="0" />
       </g>
     </g>

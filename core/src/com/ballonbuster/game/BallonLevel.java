@@ -27,8 +27,8 @@ public class BallonLevel extends BaseScreen {
     private Label hitRatioLabel;
     private Label clickedLabel;
 
-    private int popToWin = 10;
-    private int escapedToFail = 3;
+    private int popToWin = 50;
+    private int escapedToFail = 5;
 
     public BallonLevel(Game game) {
         super(game);
