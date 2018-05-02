@@ -25,6 +25,10 @@ public class BallonLevel extends BaseScreen {
     private Label poppedLabel;
     private Label escapedLabel;
     private Label hitRatioLabel;
+    private Label clickedLabel;
+
+    private int popToWin = 10;
+    private int escapedToFail = 3;
 
     public BallonLevel(Game game) {
         super(game);
@@ -59,6 +63,11 @@ public class BallonLevel extends BaseScreen {
         hitRatioLabel.setPosition(420,440);
         uiStage.addActor(hitRatioLabel);
 
+        clickedLabel = new Label("Clicked: 0", style);
+        clickedLabel.setFontScale(2);
+        clickedLabel.setPosition(20,40);
+        uiStage.addActor(clickedLabel);
+
     }
 
     @Override
@@ -83,7 +92,9 @@ public class BallonLevel extends BaseScreen {
                         @Override
                         public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                             popped++;
-                            ballon.remove();
+                            //TODO examine InputListener
+                            ballon.removeListener(ballon.getListeners().first());
+                            ballon.popBullon();
                             return true;
                         }
                     }
@@ -95,9 +106,20 @@ public class BallonLevel extends BaseScreen {
 
         poppedLabel.setText("Popped: " + popped);
         escapedLabel.setText("Escaped: " + escaped);
+        clickedLabel.setText("Clicked: " + clicked);
         if (clicked > 0) {
             int percent = (int) (100 * popped / clicked);
             hitRatioLabel.setText("Hit ratio: " + percent + "%");
+        }
+
+        if (popped >= popToWin) {
+            //winscreen
+            game.setScreen(new BallonMainMenu(game));
+        }
+
+        if (escaped >= escapedToFail) {
+            //failscreen
+            game.setScreen(new BallonMainMenu(game));
         }
 
     }

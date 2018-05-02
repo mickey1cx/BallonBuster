@@ -3,6 +3,8 @@ package com.ballonbuster.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.scenes.scene2d.Action;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 
 public class Ballon extends BaseActor {
 
@@ -26,7 +28,8 @@ public class Ballon extends BaseActor {
         time = 0;
         offsetX = -100;
 
-        setTexture(new Texture(Gdx.files.internal("red-ballon.png")));
+        setTexture(new Texture(Gdx.files.internal("grey-ballon.png")));
+        setColor(MathUtils.random(), MathUtils.random(), MathUtils.random(), 1);
 
         setX(offsetX);
 
@@ -48,4 +51,23 @@ public class Ballon extends BaseActor {
         }
 
     }
+
+    public void popBullon() {
+
+        Action popped = Actions.sequence(
+                Actions.parallel(
+                Actions.fadeOut(1),
+                Actions.scaleTo(0,0, 2)),
+                Actions.run(new Runnable() {
+                    @Override
+                    public void run() {
+                        remove();
+                    }
+                })
+        );
+
+        addAction(popped);
+
+    }
+
 }
