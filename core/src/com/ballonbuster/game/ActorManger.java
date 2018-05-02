@@ -28,17 +28,17 @@ public class ActorManger {
 
     }
 
-    public static AnimatedActor createAnimetedActor(Stage stage, Animation animation, float x, float y) {
-
-        AnimatedActor actor = new AnimatedActor();
-        actor.setAnimimation(animation);
-        actor.setPosition(x,y);
-        actor.setOrigin(actor.getWidth() / 2, actor.getHeight() / 2);
-        stage.addActor(actor);
-
-        return actor;
-
-    }
+//    public static AnimatedActor createAnimetedActor(Stage stage, Animation animation, float x, float y) {
+//
+//        AnimatedActor actor = new AnimatedActor();
+//        actor.setAnimimation(animation);
+//        actor.setPosition(x,y);
+//        actor.setOrigin(actor.getWidth() / 2, actor.getHeight() / 2);
+//        stage.addActor(actor);
+//
+//        return actor;
+//
+//    }
 
     public static Animation mouseAnimation() {
 
