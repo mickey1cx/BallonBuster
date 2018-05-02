@@ -13,7 +13,11 @@ public class Ballon extends BaseActor {
     private float time;
     private int offsetX;
 
-    public Ballon() {
+    BallonLevel ballonLevel;
+
+    public Ballon(BallonLevel ballonLevel) {
+
+        this.ballonLevel = ballonLevel;
 
         speed = 80 * MathUtils.random(0.5f, 2.0f);
         amplitude = 50 * MathUtils.random(0.5f, 2.0f);
@@ -37,6 +41,11 @@ public class Ballon extends BaseActor {
         float xPos = speed * time + offsetX;
         float yPos = amplitude * MathUtils.sin(oscillation * xPos) + initY;
         setPosition(xPos, yPos);
+
+        if (getX() > ballonLevel.mapWidth) {
+            ballonLevel.escapedInc();
+            remove();
+        }
 
     }
 }

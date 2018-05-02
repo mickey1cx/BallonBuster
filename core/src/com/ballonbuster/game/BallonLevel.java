@@ -10,8 +10,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 
 public class BallonLevel extends BaseScreen {
 
-    private final int mapWidth = 640;
-    private final int mapHeight = 640;
+    protected final int mapWidth = 640;
+    protected final int mapHeight = 640;
 
     private BaseActor bg;
 
@@ -62,6 +62,14 @@ public class BallonLevel extends BaseScreen {
     }
 
     @Override
+    public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+
+        clicked++;
+        return false;
+
+    }
+
+    @Override
     protected void update(float delta) {
 
         spawnTimer += delta;
@@ -69,7 +77,7 @@ public class BallonLevel extends BaseScreen {
         if (spawnTimer > spawnInterval) {
 
             spawnTimer -= spawnInterval;
-            final Ballon ballon = new Ballon();
+            final Ballon ballon = new Ballon(this);
             ballon.addListener(
                     new InputListener(){
                         @Override
@@ -84,5 +92,17 @@ public class BallonLevel extends BaseScreen {
 
         }
 
+
+        poppedLabel.setText("Popped: " + popped);
+        escapedLabel.setText("Escaped: " + escaped);
+        if (clicked > 0) {
+            int percent = (int) (100 * popped / clicked);
+            hitRatioLabel.setText("Hit ratio: " + percent + "%");
+        }
+
+    }
+
+    public void escapedInc() {
+        escaped++;
     }
 }
